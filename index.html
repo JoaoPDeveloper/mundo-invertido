@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mundo Invertido | Semana Front-end</title>
+    <link rel="icon" href="/assets/images/content/unnamed.jpg">
     <link rel="stylesheet" href="/assets/css/style.css">
   </head>
   <body class="light-theme" translate="yes" aria-label="O site está utilizando o tema light" role="body">
     <header aria-label="Cabeçalho da página.">
       <audio id="music" autoplay>
-        <source src="assets/musics/normal-world.mpeg" aria-details="Audio do site" />
+        <source id="source" src="./assets/musics/normal-world.mpeg" aria-details="Audio do site" />
       </audio>
       <div class="header-content">
         <img class="invert-element" src="assets/images/banner/logo.svg" alt="Imagem principal Mundo Invertido. Semana Frontend DIO." />
@@ -100,29 +101,26 @@
 
         <div class="form-content">
           <h3>Entre para o clube de D&D e tenha experiências de <span>outro mundo<span></span></h3>
-
           <div class="form-container">
             <form>
-              <label for="name">Nome Completo</label>
-              <input type="text" name="name" id="txtName">
+              <label for="name" >Nome Completo</label>
+              <input type="text" placeholder="Seu Nome Completo!" name="name" id="txtName">
           
               <label for="email">E-mail</label>
-              <input type="email" name="email" id="txtEmail">
+              <input type="email" placeholder="Seu melhor E-mail" name="email" id="txtEmail">
           
               <label for="level">Level</label>
-              <input type="text" name="level" id="txtLevel">
+              <input type="text" placeholder="Qual o Seu Nivel? :)" name="level" id="txtLevel">
           
               <label for="character">Personagem</label>
-              <textarea name="character" cols="30" rows="10" id="txtCharacter"></textarea>
+              <textarea name="character" placeholder="Descreva o seu Personagem!" cols="30" rows="10" id="txtCharacter"></textarea>
             
               <button type="button" id="btnSubscribe">Me inscrever</button>
             </form>
-            
           </div>
         </div>
       </section>
     </main>
-
     <footer>
       <p>
         Projeto construído para fins didáticos, com o objetivo de colocar em
@@ -130,10 +128,7 @@
       </p>
       <img src="assets/images/footer/logo.svg" alt="">
     </footer>
-    
     <script type="module" src="assets/js/main.js"></script>
-    <script>
-      
-    </script>
+    <script defer src="assets/js/script.js"></script>
   </body>
 </html>
