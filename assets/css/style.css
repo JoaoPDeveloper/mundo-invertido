@@ -45,6 +45,7 @@
   --character-top-image-color: #000;
   --background-lamp-image: url("../images/backgrounds/lamps-inverted.png");
   --footer-background-color: #000;
+  --link-topo:#000
 }
 
 .dark-theme button, 
@@ -69,8 +70,8 @@
  }
  #link-topo{
     text-decoration: none;
-    color: var(--primary-color-contrast);
-    background-color: var(--primary-color);
+    color:var(--primary-color);
+    background-color: var(--field-background-color);
     padding: 30px;
     position: fixed;
     right: 15px;
@@ -79,8 +80,8 @@
     border-radius: 10px;
 }
 #link-topo:hover{  
-    color: var(--primary-color);
-    background-color: var(--field-background-color);
+    color: var(--field-background-color);
+    background-color: var(--primary-color);
     box-shadow: 4px 4px 10px rgb(255, 15, 15);
     box-shadow: 5p 5px 5px 5px rgb(2, 68, 118);
     border-radius: 10px;
@@ -349,16 +350,24 @@ footer{
     padding: 60px 0;
     background-color: var(--footer-background-color);
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
     align-items: center;
     position: relative;
     overflow: hidden;
+    align-items: center;
+    gap: 50px;
 }
-footer p{
-    max-width: 700px;
+footer img{
+    max-width: 60px;
     margin-bottom: 24px;
+    display: flex;
 }
+#logo-dio{
+    max-width: 500px;
+}
+
 footer::before,
 footer::after{
     content: "";
