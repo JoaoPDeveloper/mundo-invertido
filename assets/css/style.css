@@ -62,10 +62,35 @@
  /*estilos genericos */
  *{
     margin: 0;
+    scroll-behavior: smooth;
     box-sizing: border-box;
     max-width: 100%;
     transition: 2s;
  }
+ #link-topo{
+    text-decoration: none;
+    color: var(--primary-color-contrast);
+    background-color: var(--primary-color);
+    padding: 30px;
+    position: fixed;
+    right: 15px;
+    bottom: 18px;
+    box-shadow: 3px 3px 10px rgb(214, 11, 11);
+    border-radius: 10px;
+}
+#link-topo:hover{  
+    color: var(--primary-color);
+    background-color: var(--field-background-color);
+    box-shadow: 4px 4px 10px rgb(255, 15, 15);
+    box-shadow: 5p 5px 5px 5px rgb(2, 68, 118);
+    border-radius: 10px;
+    transition: 1s;
+}
+#link-topo:active {
+    transform: scale(0.98);
+    box-shadow: 5p 5px 5px 5px rgb(2, 68, 118);
+    box-shadow: 4px 4px 10px rgb(255, 15, 15);
+}
  h1,
  h2,
  h3{
