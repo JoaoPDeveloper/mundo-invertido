@@ -12,10 +12,10 @@
 <br>
 
 ## 💻 Tecnologias :
-<a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" >  - HTML  </a>
-<a href="https://www.w3schools.com/css/" target="_blank" > - CSS </a>
-<a href="https://www.javascript.com/" target="_blank" > - JavaScript </a>
-<a href="firebase.google.com" target="_blank" > - FireBase </a>
+- <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" >   HTML  </a>
+- <a href="https://www.w3schools.com/css/" target="_blank" > CSS </a>
+- <a href="https://www.javascript.com/" target="_blank" >  JavaScript </a>
+- <a href="firebase.google.com" target="_blank" >  FireBase </a>
 
 ## 🔗 Links auxiliares : 
 
