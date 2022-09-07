@@ -248,6 +248,7 @@ section{
 }
 #section-stranger-things-trailer .video-frame{
     background-color: var(--primary-color);
+    height: 220px;
 }
 #section-stranger-things-trailer .video-frame iframe{
     position: relative;
