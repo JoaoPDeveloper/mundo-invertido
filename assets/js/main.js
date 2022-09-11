@@ -4,6 +4,7 @@ const txtName = document.getElementById('txtName')
 const txtEmail = document.getElementById('txtEmail')
 const txtLevel = document.getElementById('txtLevel')
 const txtCharacter = document.getElementById('txtCharacter')
+const txtPassword = document.getElementById('txtPassword')
 
 const btnSubscribe = document.getElementById('btnSubscribe')
 
@@ -13,16 +14,18 @@ btnSubscribe.addEventListener('click', async () =>{
     const subscription = {
         name: txtName.value,
         email: txtEmail.value,
-        level:txtLevel.value,
-        Character:txtCharacter.value
+        level: txtLevel.value,
+        password: txtPassword.value,
+        Character: txtCharacter.value
     }
-   const subscriptionId = await subscribeToHellFireClub(subscription)
-   console.log(`Inscrito com Sucesso: ${subscriptionId}`)
+    const subscriptionId = await subscribeToHellFireClub(subscription)
+    console.log(`Inscrito com Sucesso: ${subscriptionId}`)
     
    txtName.value = ''
    txtEmail.value = ''
    txtLevel.value = ''
    txtCharacter.value = ''
+   txtPassword.value = ''
 
    alert(` Inscrição feita com sucesso Seu ID é: ${subscriptionId}!`)
 })

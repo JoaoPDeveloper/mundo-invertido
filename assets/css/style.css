@@ -51,21 +51,24 @@
 .dark-theme button, 
 .dark-theme h1, 
 .dark-theme h2,
-.dark-theme h3 {
+.dark-theme h3,
+.dark-theme h4 {
     letter-spacing: 5px;
     font-weight: normal;
 }
 
-.dark-theme .invert-element {
+.dark-theme .invert-element,
+ .element-img{
     transform: rotateZ(180deg) scaleX(-1);
 }
-
+.dark-theme .invert-element-img{
+   transform: rotateZ(180deg) scaleX(-1);
+}
  /*estilos genericos */
  *{
-    margin: 0;
     scroll-behavior: smooth;
-    box-sizing: border-box;
     max-width: 100%;
+    margin: 0%;
     transition: 2s;
  }
  #link-topo{
@@ -73,8 +76,8 @@
     color:var(--primary-color);
     background-color: var(--field-background-color);
     padding: 30px;
-    position: fixed;
-    right: 15px;
+    position:fixed;
+    left: 15px;
     bottom: 18px;
     box-shadow: 3px 3px 10px rgb(214, 11, 11);
     border-radius: 10px;
@@ -101,9 +104,21 @@
     text-transform: uppercase;
     margin-bottom: 40px;
  }
+ h2{
+    text-align:center;
+    align-items: baseline;
+ }
  p{
     color: var(--highlight-color);
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    gap: 30px;
+    text-align: center;
+ }
+ h4{
+    color: var(--highlight-color);
+    font-family: var(--featured-font-family);
+    text-transform:capitalize;
+    font-size: 12px;
  }
 p,
 input,
@@ -145,6 +160,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     position: relative;
 }
 header::before{
@@ -167,10 +183,12 @@ header::before{
     z-index: 2;
 }
 .header-content img {
-    width: 80%;
+    width: 100%;
 }
 .header-content p{
     margin: 30px 0 50px ;
+    align-items:center;
+    text-align: center;
 }
 .header-content button{
     border: 3px solid var(--primary-color);
@@ -183,7 +201,7 @@ header::before{
 /*estilo dos personagens*/
 .world-characters{
     width: 100%;
-    max-width: 900px;
+    max-width: 950px;
     position: absolute;
 }
 #top-characters{
@@ -252,8 +270,8 @@ section{
 }
 #section-stranger-things-trailer .video-frame iframe{
     position: relative;
-    bottom: 24px;
-    left: 24px;
+    bottom: 22px;
+    left: 22px;
     border: 2px solid;
     border-image: linear-gradient(
         var(--primary-color),
@@ -277,6 +295,10 @@ section{
     display: flex;
     gap: 50px;
     padding-left: 20px;
+}
+.invert-element-img{
+    width: 60%;
+    right: -60px;
 }
 #section-stranger-things-gallery .gallery-image{
     width: 250px;
@@ -308,7 +330,11 @@ section{
     margin: 0;
 }
 #section-form .form-content h3 span{
+    font-family: var(--featured-font-family);
+    font-size: 4rem;
     color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 40px;
 }
 #section-form .form-content{
     display: flex;
@@ -349,7 +375,8 @@ section{
     color: var(--field-background-color);
 }
 footer{
-    padding: 60px 0;
+    padding: 60px;
+    height: 100%;
     background-color: var(--footer-background-color);
     text-align: center;
     display:flex;
@@ -359,15 +386,15 @@ footer{
     position: relative;
     overflow: hidden;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
 }
 footer img{
     max-width: 60px;
-    margin-bottom: 24px;
-    display: flex;
+    gap: 50px;
 }
 #logo-dio{
-    max-width: 500px;
+    max-width: 110px;
+    margin-bottom: 24px;
 }
 
 footer::before,
@@ -378,13 +405,67 @@ footer::after{
     background: url("../images/footer/tape.svg") no-repeat;
     background-size: contain;
     position: absolute;
-    bottom: -30px;
+    bottom: -40px;
 }
 footer::before{
     left: -50px;
+    bottom: -50px;
     transform: rotateZ(-10deg);
 }
 footer::after{
     right: -50px;
+    bottom: -50px;
     transform: rotateZ(10deg);
+}
+@media (max-width: 500px)
+{
+    *{
+        flex-direction: column;
+        width:100%;
+        text-align: center;
+    }
+    h1,
+    h3,
+    span,
+    p{
+        font-size:1.5rem;
+        padding: 5px 5px;
+        margin: 0px;
+        text-align:justify;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    form{
+        flex-direction: column;
+    }
+    #link-topo{
+        align-items: center;
+        position: ab;
+        width: 12px;
+    }
+    footer img,
+    h4,
+    #github,
+    #linkedin,
+    #logo-dio
+    {
+        position: relative;
+        z-index: 1;
+    }
+    footer{
+        width: 100%;
+    }
+    footer,h4{
+        flex-direction: column;
+    }
+}
+@media (min-width: 350px)
+{
 }

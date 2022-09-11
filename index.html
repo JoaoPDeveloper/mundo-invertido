@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=2.0" />
     <title>Mundo Invertido | Front-end Project</title>
     <link rel="icon" href="/assets/images/content/unnamed.jpg">
     <link rel="stylesheet" href="/assets/css/style.css">
@@ -43,7 +43,7 @@
         </div>
         
         <img
-        class="invert-element"
+        class="invert-element-img"
         src="assets/images/content/inverted-world.png"
         alt="Image ilustrativa do Mundo Invertido"
         />
@@ -103,19 +103,22 @@
           <h3>Entre para o clube de D&D e tenha experiências de <span>outro mundo<span></span></h3>
           <div class="form-container">
             <form>
-              <label for="name" >Nome Completo</label>
-              <input type="text" placeholder="Seu Nome Completo!" name="name" id="txtName">
+              <label for="name" >Nome Completo : </label>
+              <input type="text" placeholder="Seu Nome Completo" name="name" id="txtName" required="required">
               
-              <label for="email">E-mail</label>
-              <input type="email"  placeholder="Seu melhor E-mail!" name="email" id="txtEmail" required/>
+              <label for="email">E-mail :</label>
+              <input type="email"  placeholder="Seu melhor E-mail" name="email" id="txtEmail" required="required"/>
+
+              <label for="email">Senha : </label>
+              <input type="password"  placeholder="Digite sua Senha" name="password" id="txtPassword" required="required" />
               
-              <label for="level">Level</label>
-              <input type="number"  placeholder="Qual o Seu Level? :)" name="level" id="txtLevel">
+              <label for="level">Level : </label>
+              <input type="number"  placeholder="Qual o Seu Level? " name="level" id="txtLevel" required="required">
               
-              <label for="character">Personagem</label>
-              <textarea name="character" placeholder="Descreva o seu Personagem!" cols="30" rows="10" id="txtCharacter"></textarea>
+              <label for="character">Personagem : </label>
+              <textarea name="character" placeholder="Descreva o seu Personagem!" cols="30" rows="10" id="txtCharacter" required="required"></textarea>
               
-              <button type="button" id="btnSubscribe">Me inscrever</button>
+              <button type="button" id="btnSubscribe" >Me inscrever</button>
               <ul id="subscriptions">
               </ul>
             </form>
@@ -124,6 +127,7 @@
       </section>
     </main>
     <footer>
+      <br>
       <a  href="https://www.linkedin.com/in/joao-dev-starter/" target="_blank">
         <img src="/assets/images/footer/174857.png" alt="linkedin"  id="linkedin">
     </a>
@@ -132,10 +136,16 @@
     </a>
 <a  href="mailto:joao_entreprise@hotmail.com">
 <img src="/assets/images/footer/microsoft_office_outlook_logo_icon_145721.png" alt="outlook"  id="outlook">
-    </a>
-    <a href="https://www.dio.me/" target="_blank">
-      <img src="assets/images/footer/logo.svg" alt="logo-dio" id="logo-dio">
-    </a>
+</a>
+<a href="https://www.dio.me/" target="_blank">
+  <img src="assets/images/footer/logo.svg" alt="logo-dio" id="logo-dio">
+</a>
+  <h4>
+    &copy; 2022 HTML,CSS & JavaScript
+    <br>
+    <br>
+    Desenvolvido por: João Pedro L.
+  </h4>
     </footer>
     <a id="link-topo" href="#">&#9650;</a>
     <script type="module" src="assets/js/main.js"></script>
