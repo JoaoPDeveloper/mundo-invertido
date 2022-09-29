@@ -507,6 +507,11 @@ footer::after{
     }
     .video-frame{
         width: 470px;
+        bottom: 15%;
+    }
+    #section-stranger-things-trailer .video-frame iframe{
+        height: 280px;
+        bottom: 25%;
     }
 @media (min-width: 350px){
 
