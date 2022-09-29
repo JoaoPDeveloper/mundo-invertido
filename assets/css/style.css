@@ -422,6 +422,7 @@ footer::after{
 @media (max-width: 500px)
 {
     *{
+        zoom:85%;
         flex-direction: column;
         width:100%;
         text-align: center;
@@ -447,15 +448,17 @@ footer::after{
     form{
         flex-direction: column;
         width: 70%;
+        height: 100%;
         align-items: center;
         text-align: center;
+        zoom: 150%;
     }
     #section-form .form-container::after{
         width: 85%;
     }
-    main{
-        width: 408px;
-        max-width: 420px;
+    main,body{
+        max-width: auto;
+        min-width: 320px;
     }
     #link-topo{
         align-items: center;
@@ -478,7 +481,9 @@ footer::after{
         text-align: center;
     }
     footer{
-        width: 70%;
+        max-width: auto;
+        min-width: auto;
+        width: auto;
     }
     footer,h4{
         flex-direction: column;
