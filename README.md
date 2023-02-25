@@ -24,9 +24,10 @@
 - [W3C - World Wide Web Consortium](http://w3c.org)
 - [WAI - Web Acessibility Initiative](https://www.w3.org/WAI/)
 - [WCAG 2](https://www.w3.org/WAI/WCAG21/quickref/) 
-## 🌎 redes sociais : 
+
+## 🌎 Contato : 
 <p>
-    <img align=left margin=10 width=80 src="https://avatars.githubusercontent.com/u/95835981?s=400&u=97f1db284100d39d55f90f54d2c65f1726d62370&v=4">
+    <img align=left margin=10 width=50 src="https://avatars.githubusercontent.com/u/95835981?s=400&u=97f1db284100d39d55f90f54d2c65f1726d62370&v=4">
     <div>
   <a href = "mailto:joao_entreprise@hotmail.com"><img  height = "35" src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white"></a>
   <a href=https://www.linkedin.com/in/joao-dev-starter target="_blank"><img  height = "35" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
