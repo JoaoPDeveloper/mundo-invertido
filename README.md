@@ -10,6 +10,8 @@
                                        Projeto feito em conjunto a Semana Front-End da Dio
 
 <br>
+<a href="https://inverted-world-z4rk01.netlify.app/" target="_blank"> Link do Projeto </a>
+<br>
 
 ## 💻 Tecnologias :
 - <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" >   HTML  </a>
