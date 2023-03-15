@@ -103,23 +103,23 @@
           <h3>Entre para o clube de D&D e tenha experiências de <span>outro mundo<span></span></h3>
           <div class="form-container">
             <form>
-              <label for="name" >Nome Completo : </label>
-              <input type="text" placeholder="Nome Completo" name="name" id="txtName" required="required">
+              <label for="name" > Personagem: </label>
+              <input type="text" placeholder="Nome Completo" name="name" id="txtName"  required/>
               
               <label for="email">E-mail :</label>
-              <input type="email"  placeholder="Seu Melhor E-mail" name="email" id="txtEmail" required="required"/>
+              <input type="email"  placeholder="Seu Melhor E-mail" name="email" id="txtEmail" required/>
 
-              <label for="email">Senha : </label>
-              <input type="password"  placeholder="Digite a sua senha" name="password" id="txtPassword" required="required" />
+              <label for="password">Senha : </label>
+              <input type="password"  placeholder="Digite a sua senha" name="password" id="txtPassword" required/>
               
               <label for="level">Level : </label>
-              <input type="number"  placeholder="Qual o Seu Level?" name="level" id="txtLevel" required="required">
+              <input type="number"  placeholder="Qual o Seu Level?" name="level" id="txtLevel" required/>
+
+              <label for="character"> Como você é?: </label>
+              <textarea name="character" placeholder="Descreva como é o seu personagem!" cols="30" rows="10" id="txtCharacter" required></textarea>
               
-              <label for="character">Personagem : </label>
-              <textarea name="character" placeholder="Descreva como é o seu personagem!" cols="30" rows="10" id="txtCharacter" required="required"></textarea>
-              
-              <button type="button" id="btnSubscribe" >Me inscrever</button>
-              <ul id="subscriptions">
+              <button type="submit" id="btnSubscribe" aria-required="true" >Me inscrever</button>
+              <ul id="subscriptions" >
               </ul>
             </form>
           </div>
