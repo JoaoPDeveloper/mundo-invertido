@@ -220,6 +220,7 @@ header::before{
 .header-content button{
     border: 3px solid var(--primary-color);
     color: var(--primary-color);
+    border-radius: 12px;
 }
 .header-content button:hover{
     background-color: var(--primary-color);
@@ -607,6 +608,12 @@ footer::after{
         #top-characters {
             width: 320px;
             zoom: 100%;
+        }
+        #section-form .form-container::after{
+            left: 10px;
+        }
+        .link-topo{
+            width: 3%;
         }
         .header-content{
             max-width: 375px;
