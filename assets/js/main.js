@@ -42,3 +42,17 @@ async function loadData() {
     console.log(subscriptions)
 }
 loadData()
+
+
+//botao topo 
+window.onscroll = function() {
+    var linkTopoBtn = document.querySelector('.link-topo');
+    if (window.pageYOffset >  300) {
+        linkTopoBtn.style.display = 'block';
+    } else {
+        linkTopoBtn.style.display = 'none';
+    }
+  };
+  function linkTopo() {
+    window.scrollTo(0, 0);
+  }

@@ -159,6 +159,26 @@ textarea:focus-visible{
     outline: none;
     border-color: black;
 }
+#outlook,
+#github,
+#linkedin{
+    border-radius: 50px;
+}
+#github:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s;
+}
+#outlook:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s;
+}
+#linkedin:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s;
+}
 /* header */ 
 header{
     background-color: var(--header-background-color); 
