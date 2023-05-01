@@ -1,3 +1,6 @@
+//conexão ao banco do google firebase
+
+
 import { getHellfireClubSubscriptions, subscribeToHellFireClub } from "./firebase/hellfire-club.js";
 
 const txtName = document.getElementById('txtName')
