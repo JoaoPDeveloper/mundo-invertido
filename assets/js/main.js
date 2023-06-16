@@ -1,58 +1,62 @@
 //conexão ao banco do google firebase
 
+import {
+    getHellfireClubSubscriptions,
+    subscribeToHellFireClub,
+} from "./firebase/hellfire-club.js";
 
-import { getHellfireClubSubscriptions, subscribeToHellFireClub } from "./firebase/hellfire-club.js";
+const txtName = document.getElementById("txtName");
+const txtEmail = document.getElementById("txtEmail");
+const txtLevel = document.getElementById("txtLevel");
+const txtCharacter = document.getElementById("txtCharacter");
+const txtPassword = document.getElementById("txtPassword");
 
-const txtName = document.getElementById('txtName')
-const txtEmail = document.getElementById('txtEmail')
-const txtLevel = document.getElementById('txtLevel')
-const txtCharacter = document.getElementById('txtCharacter')
-const txtPassword = document.getElementById('txtPassword')
+const btnSubscribe = document.getElementById("btnSubscribe");
 
-const btnSubscribe = document.getElementById('btnSubscribe')
+const subscriptionsList = document.getElementById("subscriptions");
 
-const subscriptionsList = document.getElementById('subscriptions')
+btnSubscribe.addEventListener("click", async () => {
+  const subscription = {
+    name: txtName.value,
+    email: txtEmail.value,
+    password: txtPassword.value,
+    level: txtLevel.value,
+    Character: txtCharacter.value,
+  };
+  const subscriptionId = await subscribeToHellFireClub(subscription);
+  console.log(`Inscrito com Sucesso: ${subscriptionId}`);
 
-btnSubscribe.addEventListener('click', async () =>{
-    const subscription = {
-        name: txtName.value,
-        email: txtEmail.value,
-        password: txtPassword.value,
-        level: txtLevel.value,
-        Character: txtCharacter.value
-    }
-    const subscriptionId = await subscribeToHellFireClub(subscription)
-    console.log(`Inscrito com Sucesso: ${subscriptionId}`)
-    
-   txtName.value = (`${subscriptionId}`)
-   txtEmail.value = 'E-mail Cadastrado!'
-   txtPassword.value = ''
-   txtLevel.value = ''
-   txtCharacter.value = 'Dados Cadastrados!'
+  txtName.value = `${subscriptionId}`;
+  txtEmail.value = "E-mail Cadastrado!";
+  txtPassword.value = "";
+  txtLevel.value = "";
+  txtCharacter.value = "Dados Cadastrados!";
 
-   alert(`Inscrição feita com sucesso,Seu ID é: ${subscriptionId}!`)
-})
-async function loadData() {  
-    const subscriptions = await getHellfireClubSubscriptions()
-    subscriptionsList.innerHTML = subscriptions.map(sub => `
+  alert(`Inscrição feita com sucesso,Seu ID é: ${subscriptionId}!`);
+});
+async function loadData() {
+  const subscriptions = await getHellfireClubSubscriptions();
+  subscriptionsList.innerHTML = subscriptions
+    .map(
+      (sub) => `
     <li>
     ${sub.name}
     </li> `
-    ).join('')
-    console.log(subscriptions)
+    )
+    .join("");
+  console.log(subscriptions);
 }
-loadData()
+loadData();
 
-
-//botao topo 
-window.onscroll = function() {
-    var linkTopoBtn = document.querySelector('.link-topo');
-    if (window.pageYOffset >  300) {
-        linkTopoBtn.style.display = 'block';
-    } else {
-        linkTopoBtn.style.display = 'none';
-    }
-  };
-  function linkTopo() {
-    window.scrollTo(0, 0);
+//botao topo
+window.onscroll = function () {
+  var linkTopoBtn = document.querySelector(".link-topo");
+  if (window.pageYOffset > 300) {
+    linkTopoBtn.style.display = "block";
+  } else {
+    linkTopoBtn.style.display = "none";
   }
+};
+function linkTopo() {
+  window.scrollTo(0, 0);
+}

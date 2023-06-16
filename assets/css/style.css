@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
 
-/* VARIABLES & THEMES */
+/* Cores variaveis e temas */
 
 :root {
   --primary-color: #cf0f0f;
@@ -84,6 +84,7 @@
     bottom: 18px;
     box-shadow: 3px 3px 10px rgb(214, 11, 11);
     border-radius: 10px;
+    width: 20px;
 }
 .link-topo:hover{ 
     background-color: var(--second-color-contrast);
@@ -383,7 +384,7 @@ section{
     position: absolute;
     top: 24px;
     border-radius: 10px;
-    left: 24px;
+    left: -20px;
     z-index: -1;
 }
 #section-form .form-container form{
@@ -597,8 +598,12 @@ footer::after{
             right: 10px;
         }
         #section-form .form-content h3{
-            font-size: 2.5rem;
+            font-size: 2rem;
             width: 350px;
+        }
+        #linkedin{
+            z-index: 99999;
+            position: relative;
         }
     }
     @media only screen and (min-width: 320px) and (max-width:375px){
