@@ -7,8 +7,6 @@
             <br> 
             Porém, a recompensa é grande: salvar Hawkings e o mundo todo das garras de Vecna. Você está preparado(a)? 
 
-                                       Projeto feito em conjunto a Semana Front-End da Dio
-
 <br>
 <a href="https://inverted-world-z4rk01.netlify.app/" target="_blank"> Link do Projeto </a>
 <br>
