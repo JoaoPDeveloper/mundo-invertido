@@ -58,14 +58,13 @@
     letter-spacing: 5px;
     font-weight: normal;
 }
-
-.dark-theme .invert-element,
+.dark-theme .invert-element-img,
+#frameVideo,
+.invert-element,
  .element-img{
-    transform: rotateZ(180deg) scaleX(-1);
-}
-.dark-theme .invert-element-img{
    transform: rotateZ(180deg) scaleX(-1);
 }
+
  /*estilos genericos */
  *{
     scroll-behavior: smooth;
@@ -164,6 +163,7 @@ textarea:focus-visible{
 #github,
 #linkedin{
     border-radius: 50px;
+    width: 35px;
 }
 #github:hover{
     -webkit-transform: scale(1.2);

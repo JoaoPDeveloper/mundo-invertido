@@ -1,4 +1,3 @@
-
 // comandos em js para fazer a musica dar autoplay ao trocar de mundo!
 
 window.addEventListener('click', function () { 
